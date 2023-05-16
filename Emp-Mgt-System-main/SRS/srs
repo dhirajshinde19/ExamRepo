@@ -1,0 +1,88 @@
+Document: SRS for Employee Manangement System
+
+Title: Employee Mangement System
+
+Overview:
+In this world of growing technologies everything has been computerized. With large number of work opportunities the human workforce has increased.
+Thus there is a need of system which can handle the data of such a large number of employees in an organization, This project simplifies the task 
+of maintain records because of its user fiendly nature. The 'EMPLOYEE MANAGEMENT SYSTEM' has been developed to override the problem prevailing 
+in the practicing manual system. This software is supported to eliminate an din some cases reduce hardships faced by exixting system.
+
+
+Objective:
+The objective of this web-based application is to Enable HRs' to build, maintain and manage their company's Employee database,
+Aid in the process of maintaing and managing Project Allocations and managing deadlines of projects. 
+Enable employees to apply for leave with thier managers and for managers to approve those leaves.
+
+
+Scope:
+As this system allows HRs' and Managers to maintin the sensitive database of Employees and Projects
+the scope of the access for this application is within the Company's Domain. 
+Any anonymous User can not view, or edit this data without proper Authorization.
+
+Definitions:
+
+Requirements:
+
+Functional Requirements:
+1.Authentication:
+		Login- The user can login to the EMS with their username and password.
+		Logout- The user can log out from the EMS system.
+		Login failure- If the user does not exist in the database or the user has not been authorized by the EMS then system will show login failure.
+		Forgot Password: 
+2.Authorization:
+		After logging in, the user role will be checked from the database and the user interface will be displayed according to their role.
+		Manager's and HR's will have different authorization levels as compared to regular employees.
+
+3.Display Data:
+		Employees can view their personal information. 
+		Managers can see users personnel information of all employees as well as employee’s information who are under their department.
+		HR can display their personnel information and all employee's information.
+
+4.CRUD on Employee Details:
+		CRUD Operation can be performed on the Employee's data with varying levels of access authorization based on the job profiles.
+		HR's will be able to Hire Employees and Updated Employee's Data
+		Managers can modify the team assigned to a Project
+		Employees can update their personal details
+
+5. Leave Application and Approvals:
+		Employees will be able to apply for leave with their respective Project Managers and Managers will be able approve or reject thier leave request.
+
+6. Project/Task Management:
+		Manager can assign and remove Employees from projects.
+		Managers will be able to assign day-to-day tasks to the employees working on a project with specific deadlines.
+
+
+Non-Functional Requirements:
+1. Security:
+		Any anonymus user will not be able to view or access data of the EMS.
+		Registered Employees will be able to access profiles of other employees in the organization however they can only update or edit their Personal details.
+		Registered Employees and Managers of a project will be able to monitor the progress of that project. 
+		System will block the anonymus user as we use the firewall in the server to protect the application from cyber attacks.
+		Sensitive data will be always encrypted across communication.
+
+2. Reliable:
+		The system will have backup of the employee data on regular basis and recover this data in short 
+		time duration to keep the system operational.
+		During peak hours system will maintain same user experience by managing and load balancing.
+
+
+3. Avaliblity:
+		uptime:  24 * 7 available
+
+4. Portability:
+		User will be able to access EMS portal on various devices at the same time.
+		System can be deployed to single server, multi server, to any OS, Cloud (Azure or AWS or GCP).
+
+5. Maintainablity:
+		A Commercial database software will be used to maintain System data Persistence.
+		A readymade Web Server will be installed to host online Web Site with server management capabilities.
+		IT operations team will easily monitor and configure System using Administrative tools provided by Servers.
+		Separate enviornment will be maintained for system isolation in  production, testing, and development.
+
+6. Efficiency: 
+		On festival season, maximum number of leaves will be placed. The system will be able to efficiently 
+		handle all the requests and present them to respective managers for approvals.
+
+
+		
